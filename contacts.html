@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Главная - Хайп</title>
- <meta name="description" content="Краткое описание главной страницы хайпового сайта">
- <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Хайп</title>
+    <meta name="description" content="Краткое описание главной страницы хайпового сайта">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
- <title>О нас - Название вашего сайта</title>
- <meta name="description" content="Узнайте больше о нашей компании и истории">
+    <title>О нас - Название вашего сайта</title>
+    <meta name="description" content="Узнайте больше о нашей компании и истории">
 </head>
 <body>
- <header>
- <a href="/">Хайп</a>
- <!-- Главное меню навигации -->
- <nav>
- <ul>
- <li><a href="index.html">Главная</a></li>
- <li><a href="about.html">О нас</a></li>
- <li><a href="contacts.html">Контакты</a></li>
- </ul>
- </nav>
- </header>
- <main>
- <!-- Простые "хлебные крошки" -->
- <nav aria-label="Хлебные крошки">
- <a href="index.html">Главная</a> →
- <span>Контакты</span>
- </nav>
- <section>
- <h2>хайп</h2>
- <img src = "assets/grusha.jpg">
- </section>
- </main>
- <footer>
- <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
- <p>Телефон: +7 (123) 456-78-90</p>
- </footer>
+    <header>
+        <a href="/">Хайп</a>
+        <!-- Главное меню навигации -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- Простые "хлебные крошки" -->
+        <nav aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a> →
+            <span>Контакты</span>
+        </nav>
+        <section>
+            <h2>хайп</h2>
+            <img src = "assets/grusha.jpg">
+        </section>
+
+        <form id="ContactForm">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name">
+
+        <label for="phone">Ваш телефон</label>
+        <input type="text" id="phone" name="phone" placeholder="+7-999-999-99-99">
+
+        <label for="email">Ваш email</label>
+        <input type="text" id="email" name="email">
+
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <label for="course">Ваш курс</label>
+        <select id="course" name="course">
+            <option value="">--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Отправить</button>
+        <button type="reset" id="reset-btn">Сбросить</button>
+    </form>
+
+    </main>
+        <footer>
+            <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </footer>
+        <script src="script.js"></script>
 </body>
 </html>
