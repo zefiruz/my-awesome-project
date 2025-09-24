@@ -11,7 +11,6 @@ emailInput.addEventListener('input', validateEmail);
 
 //функция валидации email
 function validateEmail(){
-    //[A-Za-z0-9_\.]{3,10}@[a-z0-9_\.]{1,15}.[a-z]{2-3}
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
     if (emailRegex.test(emailInput.value)){ //проверяем выражение с регулярным выражением

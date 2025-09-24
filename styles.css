@@ -75,3 +75,29 @@ button:hover{
     max-width: 730px;
     max-height: 430px;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* Логотип */
+header > a {
+    margin-right: 40px; /* расстояние от логотипа до меню */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #262424;
+}
+
+/* Меню навигации */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
